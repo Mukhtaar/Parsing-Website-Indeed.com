@@ -17,10 +17,10 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 res = requests.get(url, params=parameters, headers=headers)
 
 
-def get_total_pages():
+def get_total_pages(query, location):
     parameters = {
-        'q': 'Python Developer',
-        'l': 'Jakarta'
+        'q': query,
+        'l': location
     }
 
     res = requests.get(url, params=parameters, headers=headers)
@@ -46,10 +46,11 @@ def get_total_pages():
     return total
 
 
-def get_all_items():
+def get_all_items(query, location, start, page):
     parameters = {
-        'q': 'Python Developer',
-        'l': 'Jakarta'
+        'q': query,
+        'l': location,
+        'start': start
     }
     res = requests.get(url, params=parameters, headers=headers)
 
@@ -91,17 +92,49 @@ def get_all_items():
     except FileExistsError:
         pass
 
-    with open('json_result/job_list.json', 'w+') as json_data:
+    with open(f'json_result/{query}_in_{location}_page_{page}.json', 'w+') as json_data:
         json.dump(jobs_list, json_data)
     print('Json created success!')
+    return jobs_list
 
-    # Created Csv
+
+def create_document(dataFrame, filename):
+    try:
+        os.mkdir('data_result')
+    except FileExistsError:
+        pass
+
     df = pd.DataFrame(jobs_list)
-    df.to_csv('Indeed_data.csv', index=False)
-
-    # Data Created
+    df.to_csv(f'Indeed_data/{filename}.csv', index=False)
     print('Data created success!')
 
 
+def run():
+    query = input('Enter your query : ')
+    location = input('Enter your location : ')
+
+    total = get_total_pages(query, location)
+    counter = 0
+    final_result = []
+    for page in range(total):
+        page += 1
+        counter += 10
+        final_result += get_all_items(query, location, counter, page)
+
+    # Formating data
+    try:
+        os.mkdir('Reports')
+    except FileExistsError:
+        pass
+
+    with open('reports/{}.json'.format(query), 'w+') as final_data:
+        json.dump(final_result, final_data)
+
+    print('Data json created success')
+
+    # Created document
+    create_document(final_result, query)
+
+
 if __name__ == '__main__':
-    get_all_items()
+    run()
