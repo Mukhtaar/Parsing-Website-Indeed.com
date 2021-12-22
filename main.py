@@ -104,7 +104,7 @@ def create_document(dataFrame, filename, jobs_list=None):
     except FileExistsError:
         pass
 
-    df = pd.DataFrame(jobs_list)
+    df = pd.DataFrame(dataFrame)
     df.to_csv(f'Indeed_data/{filename}.csv', index=False)
     print('Data created success!')
 
