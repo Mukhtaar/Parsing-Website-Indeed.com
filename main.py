@@ -98,7 +98,7 @@ def get_all_items(query, location, start, page):
     return jobs_list
 
 
-def create_document(dataFrame, filename):
+def create_document(dataFrame, filename, jobs_list=None):
     try:
         os.mkdir('data_result')
     except FileExistsError:

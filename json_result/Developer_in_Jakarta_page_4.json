@@ -1,1 +1,77 @@
-[{"Title": "Senior C# Developer", "Company_name": "Petrolink International", "Link": "Link is not available"}, {"Title": "Web Developer Internship", "Company_name": "Sealog", "Link": "Link is not available"}, {"Title": "Fullstack developer angular js python", "Company_name": "Beeso Studio", "Link": "Link is not available"}, {"Title": "BI Developer", "Company_name": "IDC Tech", "Link": "Link is not available"}, {"Title": "BaruSoftware Quality Assurance (QA Tester)", "Company_name": "Halosis - PT. Hasil Sukses Indonesia", "Link": "Link is not available"}, {"Title": "ShopeePay Frontend Engineer [Entry Level] - NEW", "Company_name": "Shopee", "Link": "https://id.indeed.com//cmp/Shopee"}, {"Title": "Back End Developer (Node JS)", "Company_name": "PT Mitra Talenta Grup (Celerates)", "Link": "Link is not available"}, {"Title": "Full Stack Developer", "Company_name": "PT Klik Digital Sinergi", "Link": "Link is not available"}, {"Title": "PHP Developer - MPP", "Company_name": "R Systems", "Link": "Link is not available"}, {"Title": "Business Intelligence", "Company_name": "PT. Indocyber Global Technology", "Link": "Link is not available"}, {"Title": "IT operations", "Company_name": "Shipper", "Link": "Link is not available"}, {"Title": "BaruBack End Developer", "Company_name": "PT QTERA MANDIRI", "Link": "Link is not available"}, {"Title": "BaruAssistant Manager, Development & Commercialization, Footwear...", "Company_name": "Adidas", "Link": "https://id.indeed.com//cmp/Adidas"}, {"Title": "Backend Developer", "Company_name": "PT. ALTO Network", "Link": "Link is not available"}, {"Title": "Web Developer", "Company_name": "1rstWAP", "Link": "Link is not available"}]
+[
+  {
+    "Title": "Senior C# Developer",
+    "Company_name": "Petrolink International",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "Web Developer Internship",
+    "Company_name": "Sealog",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "Fullstack developer angular js python",
+    "Company_name": "Beeso Studio",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "BI Developer",
+    "Company_name": "IDC Tech",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "BaruSoftware Quality Assurance (QA Tester)",
+    "Company_name": "Halosis - PT. Hasil Sukses Indonesia",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "ShopeePay Frontend Engineer [Entry Level] - NEW",
+    "Company_name": "Shopee",
+    "Link": "https://id.indeed.com//cmp/Shopee"
+  },
+  {
+    "Title": "Back End Developer (Node JS)",
+    "Company_name": "PT Mitra Talenta Grup (Celerates)",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "Full Stack Developer",
+    "Company_name": "PT Klik Digital Sinergi",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "PHP Developer - MPP",
+    "Company_name": "R Systems",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "Business Intelligence",
+    "Company_name": "PT. Indocyber Global Technology",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "IT operations",
+    "Company_name": "Shipper",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "BaruBack End Developer",
+    "Company_name": "PT QTERA MANDIRI",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "BaruAssistant Manager, Development & Commercialization, Footwear...",
+    "Company_name": "Adidas",
+    "Link": "https://id.indeed.com//cmp/Adidas"
+  },
+  {
+    "Title": "Backend Developer",
+    "Company_name": "PT. ALTO Network",
+    "Link": "Link is not available"
+  },
+  {
+    "Title": "Web Developer",
+    "Company_name": "1rstWAP",
+    "Link": "Link is not available"
+  }
+]
